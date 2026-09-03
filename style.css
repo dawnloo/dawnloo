@@ -1,12 +1,4 @@
-:root {
-  --bg-color: #0f172a;
-  --card-bg: #1e293b;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --accent: #38bdf8;
-  --border: #334155;
-}
-
+/* Base Reset & Fonts */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,87 +6,86 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.hero {
-  margin-bottom: 48px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
-}
-
-.highlight {
-  color: var(--accent);
-}
-
-.bio {
-  font-size: 1.15rem;
-  color: var(--text-muted);
-}
-
-.bio strong {
-  color: var(--text-main);
-}
-
-.work-section {
-  margin-bottom: 48px;
-}
-
-.work-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
-  margin-bottom: 16px;
-}
-
-.role-location {
-  font-size: 0.9rem;
-  color: var(--accent);
-  margin-bottom: 12px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 16px;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  text-decoration: underline;
-}
-
-footer {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 0 20px;
   text-align: center;
-  color: var(--text-muted);
+}
+
+/* Minimalist Top Nav */
+.navbar {
+  padding: 30px 0 10px 0;
+}
+
+.nav-links a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 14px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #111111;
+}
+
+/* Centered Header */
+.site-header {
+  margin: 40px 0 60px 0;
+}
+
+.brand-name {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.brand-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* Main Portfolio Section */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.project-item {
+  margin-bottom: 80px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0px;
+}
+
+/* Minimal Footer */
+footer {
+  padding: 40px 0;
+  color: #888888;
   font-size: 0.85rem;
-  margin-top: 60px;
 }
